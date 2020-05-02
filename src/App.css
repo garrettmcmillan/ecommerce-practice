@@ -1,15 +1,76 @@
 :root {
-  --mainBlue: #2a2a72;
+  --mainBlue: #faf3dd;
   --lightBlue: #009ffd;
-  --mainWhite: #f3f3f3;
+  --mainWhite: #fefdfb;
   --mainDark: #232528;
   --mainYellow: #ffa400;
+  --mainGreen: #4a7c59;
+  --paleGreen: #c8d5b9;
 }
 
 body {
   font-family: 'Oswald', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
+}
+@media screen and (max-width: 800px) {
+  .nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .logo-container {
+    display: flex;
+    order: 0;
+  }
+  .link-container {
+    display: flex;
+    order: 2;
+    justify-content: space-between;
+  }
+  .nav-item {
+    margin: 0 !important;
+  }
+  .about {
+    padding-right: 1rem !important;
+  }
+  .products {
+    padding-left: 1rem !important;
+  }
+  .button-container {
+    display: flex;
+    order: 2;
+  }
+  .cart-button {
+    margin: 0 !important;
+  }
+}
+.nav-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.link-container {
+  display: flex;
+  padding: 0;
+}
+
+.logo-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-title {
+  margin: auto;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  font-family: 'Calistoga', cursive;
+  display: flex;
+  flex-direction: column;
+  color: var(--mainGreen);
+  font-size: 1.8rem;
 }
 
 .text-title {

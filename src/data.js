@@ -1,5 +1,5 @@
 /* 
-https://www.iconfinder.com/icons/1243689/call_phone_icon
+https://www.iconfinder.com/icons/1046674/arabica_barista_coffea_coffea_arabica_coffee_coffee_plant_plant_icon
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/Makoto_msk */
 
