@@ -13,35 +13,33 @@ body {
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .nav-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
   .logo-container {
     display: flex;
     order: 0;
+    align-items: center;
   }
   .link-container {
-    display: flex;
+    flex-direction: column;
+    text-align: center;
     order: 2;
-    justify-content: space-between;
   }
+
   .nav-item {
     margin: 0 !important;
   }
-  .about {
-    padding-right: 1rem !important;
-  }
-  .products {
-    padding-left: 1rem !important;
-  }
+
   .button-container {
     display: flex;
+    justify-content: center !important;
     order: 2;
   }
   .cart-button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     margin: 0 !important;
   }
 }
@@ -56,7 +54,6 @@ body {
 }
 
 .logo-container {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,15 +70,20 @@ body {
   font-size: 1.8rem;
 }
 
-.text-title {
-  font-family: 'Calistoga', cursive;
-  letter-spacing: 0.3rem;
+.button-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.text-blue {
-  color: var(--mainBlue);
+.text-title {
+  font-family: 'Calistoga', cursive;
+  letter-spacing: 0.15rem;
+}
+
+.text-green {
+  color: var(--mainGreen);
 }
 
 .text-bright {
-  color: var(--lightBlue);
+  color: var(--paleGreen);
 }

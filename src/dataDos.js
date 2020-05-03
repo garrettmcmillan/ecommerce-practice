@@ -23,7 +23,7 @@ export const storeProducts = [
         price: 28,
         featured: "Carhartt Work In Progress Stratus Hat Low",
         info:
-            "This hat will have you unsure if you're Jacques Cousteau or not.",
+            "This hat will have you unsure if you're Jacques Cousteau or Bon Iver.",
         inCart: false,
         count: 0,
         total: 0
@@ -47,7 +47,7 @@ export const storeProducts = [
         price: 5,
         featured: "Good Will Special",
         info:
-            "No reason to snag a new one of these, everyone knows the best flannels are found broken in by someone else.",
+            "No reason to snag a new one of these, everyone knows the best flannels have been broken in by someone else.",
         inCart: false,
         count: 0,
         total: 0
@@ -95,7 +95,7 @@ export const storeProducts = [
         price: 130,
         featured: "Chaco Z/2 Classic",
         info:
-            "You'll never again be pained by having to put a flip flop on again.",
+            "You'll never again be pained by having to put a pair of flip flops on again.",
         inCart: false,
         count: 0,
         total: 0

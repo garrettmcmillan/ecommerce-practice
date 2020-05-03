@@ -7,11 +7,18 @@ import { ButtonContainer } from './Button';
 
 
 const NavWrapper = styled.nav`
-    background: var(--mainBlue);
+    background: var(--mainBlue) !important;
     .nav-link {
         color: var(--mainGreen) !important;
         font-size: 1.4rem;
         text-transform: capitalize;
+        padding-bottom: 0.2rem;
+            &:hover{
+                border-bottom: 0.03rem solid var(--paleGreen);
+            }
+            &:focus{
+                outline: none;
+            }
     }
 `
 export default class Navbar extends Component {
@@ -22,35 +29,40 @@ export default class Navbar extends Component {
 https://www.iconfinder.com/icons/1046674/arabica_barista_coffea_coffea_arabica_coffee_coffee_plant_plant_icon
 Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
-                <span className="link-container"> 
+                <span className="link-container col-sm-4"> 
                     <ul className="navbar-nav">
-                        <li className="nav-item ml-5">
+                        <li className="nav-item ml-2">
                             <Link to="/" className="nav-link about">
-                                about
+                                home
                             </Link>
                         </li>
                         <li className="nav-item ml-5">
                             <Link to="/" className="nav-link products">
                                 products
                             </Link>
-                        </li> 
+                        </li>
+                        <li className="nav-item ml-5">
+                            <Link to="/" className="nav-link team">
+                                about
+                            </Link>
+                        </li>
                     </ul>
                 </span>
-                <span className="logo-container mr-10" >
-                    <Link to="/" style={{ textDecoration: 'none' }}>
+                <span className="logo-container col-sm-4" >
+                    <Link className="" to="/" style={{ textDecoration: 'none' }}>
                         <span className="logo-title">
-                            <span className="navbar-brand mr-2">
-                                <img src={logo} className="img-fluid mx-auto d-block" alt="store" />
+                            <span className="navbar-brand">
+                                <img src={logo} className="mx-auto d-block" alt="store" />
                             </span>
                             My Generic Aesthetic.
                         </span>
                     </Link>
                 </span>
-                <span className="button-container">
+                <span className="button-container col-sm-4">
                     <Link to="/cart" className="">
-                        <ButtonContainer className="cart-button mr-5" >
+                        <ButtonContainer className="cart-button mr-2" >
                             <span className=" mr-2">
-                                <i className="fas fa-truck-pickup" />
+                                <i className="fas fa-truck-monster" />
                             </span> 
                             my truckload
                         </ButtonContainer>
