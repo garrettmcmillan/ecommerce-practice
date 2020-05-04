@@ -61,9 +61,11 @@ const ProductWrapper = styled.div`
     .card {
         border: transparent;
         transition: all 0.4s linear;
+        border-radius: 0.2rem;
 
     }
     .card-footer {
+        border-radius: 0.2rem;
         display: flex;
         align-items: center;
         background: transparent;
