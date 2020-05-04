@@ -8,13 +8,14 @@ import { ButtonContainer } from './Button';
 
 const NavWrapper = styled.nav`
     background: var(--mainBlue) !important;
-    .nav-link {
+        .nav-link {
         color: var(--mainGreen) !important;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        letter-spacing: .01rem;
         text-transform: capitalize;
         padding-bottom: 0.2rem;
             &:hover{
-                border-bottom: 0.03rem solid var(--paleGreen);
+                transform: scale(1.01);
             }
             &:focus{
                 outline: none;
@@ -31,27 +32,27 @@ Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
                 <span className="link-container col-sm-4"> 
                     <ul className="navbar-nav">
-                        <li className="nav-item ml-2">
-                            <Link to="/" className="nav-link about">
+                        <li className="nav-item ml-4">
+                            <Link to="/" className="nav-link home">
                                 home
                             </Link>
                         </li>
                         <li className="nav-item ml-5">
-                            <Link to="/" className="nav-link products">
+                            <Link to="/products" className="nav-link products">
                                 products
                             </Link>
                         </li>
                         <li className="nav-item ml-5">
-                            <Link to="/" className="nav-link team">
+                            <Link to="/" className="nav-link about">
                                 about
                             </Link>
                         </li>
                     </ul>
                 </span>
                 <span className="logo-container col-sm-4" >
-                    <Link className="" to="/" style={{ textDecoration: 'none' }}>
+                    <Link className="" to="/" style={{textDecoration: 'none'}} >
                         <span className="logo-title">
-                            <span className="navbar-brand">
+                            <span>
                                 <img src={logo} className="mx-auto d-block" alt="store" />
                             </span>
                             My Generic Aesthetic.
@@ -59,8 +60,8 @@ Creative Commons (Attribution 3.0 Unported);
                     </Link>
                 </span>
                 <span className="button-container col-sm-4">
-                    <Link to="/cart" className="">
-                        <ButtonContainer className="cart-button mr-2" >
+                    <Link to="/cart" className="button-link" style={{textDecoration: 'none'}} >
+                        <ButtonContainer className="cart-button mr-4" >
                             <span className=" mr-2">
                                 <i className="fas fa-truck-monster" />
                             </span> 

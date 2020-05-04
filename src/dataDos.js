@@ -18,19 +18,19 @@ export const storeProducts = [
     },
     {
         id: 2,
-        title: "A Beanie",
+        title: "A Very 'Short' Beanie",
         img: "img/product-2.jpg",
         price: 28,
         featured: "Carhartt Work In Progress Stratus Hat Low",
         info:
-            "This hat will have you unsure if you're Jacques Cousteau or Bon Iver.",
+            "This hat will have you unsure if you're Jacques Cousteau or Bon Iver or Joe Pesci in Home Alone 2.",
         inCart: false,
         count: 0,
         total: 0
     },
     {
         id: 3,
-        title: "A Solid Color Pocket Tee",
+        title: "A Shirt With A Pocket?",
         img: "img/product-3.jpg",
         price: 28,
         featured: "Everlane Premium-Weight Pocket Tee",
@@ -54,7 +54,7 @@ export const storeProducts = [
     },
     {
         id: 5,
-        title: "Some Light Outerwear",
+        title: "Cozy Outerwear",
         img: "img/product-5.jpg",
         price: 139,
         featured: "Patagonia Synchilla Snap-T",
@@ -78,7 +78,7 @@ export const storeProducts = [
     },
     {
         id: 7,
-        title: "An Overly Expensive Pair of Raw Denim Jeans",
+        title: "An Expensive Pair of Raw Denim",
         img: "img/product-7.jpg",
         price: 220,
         featured: "Railcar Fine Goods Spikes X052",
@@ -126,7 +126,7 @@ export const storeProducts = [
     },
     {
         id: 11,
-        title: "An Expensive, But Severely Dinted Water Bottle",
+        title: "A Nice, But Severely Dinted Water Bottle",
         img: "img/product-11.jpg",
         price: 45,
         featured: "Hydroflask 32oz Wide Mouth",
@@ -138,7 +138,7 @@ export const storeProducts = [
     },
     {
         id: 12,
-        title: "Reusable Mug To Show Your Loyalty",
+        title: "A Reusable Mug To Show Your Loyalty",
         img: "img/product-12.jpg",
         price: 25,
         featured: "Casa Blanca Camp Mug",
