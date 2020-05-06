@@ -29,25 +29,25 @@ export default class Details extends Component {
                             </div>
                             {/* product info */}
                             <div className="row">
-                                <div className="col-10 mx-auto col-md-6 my-3">
+                                <div className="col-10 mx-auto col-md-6 my-3 d-flex">
                                     <img src={img} className="img-fluid" alt="product" />
                                 </div>
                                 {/* product text */}
                                 <div className="col-10 mx-auto col-md-6 my-3">
-                                    {/* <h2>
-                                        featured: {title}
-                                    </h2> */}
-                                    <h4 className="text-title text-green mt-3 mb-2 text-capitalize">
+                                <div className="d-flex justify-content-between">
+                                    <h4 className="align-self-center text-title text-green mt-3 mb-2 text-capitalize">
                                         {featured}
                                     </h4>
-                                    <h4 className="text-green text-capitalize">
-                                            price: <span>$</span>{price}
+                                    <h4 className="text-green font-italic mt-3 mb-2">
+                                        <span className="mr-1">${price}</span>
                                     </h4>
-                                    <p className="lead">
+                                </div>
+                                <hr />
+                                    <p className="lead text-green">
                                         {info}
                                     </p>
                                     {/* buttons */}
-                                    <div>
+                                    <div className="d-flex justify-content-center">
                                         <Link to="/products">
                                             <ButtonContainer btn >
                                                 back to aesthetic
@@ -56,7 +56,8 @@ export default class Details extends Component {
                                         <ButtonContainer
                                         disabled={ inCart ? true : false}
                                         onClick={() => {
-                                            value.addToCart(id)
+                                            value.addToCart(id);
+                                            value.openModal(id);
                                         } }
                                         >
 

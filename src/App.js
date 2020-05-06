@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar'
 import Details from './components/Details'
-import Cart from './components/Cart'
+import Cart from './components/cart/Cart'
 import Default from './components/Default'
 import ProductList from './components/ProductList';
 import Home from './components/Home';
-
+import Modal from './components/Modal';
 
 import './App.css';
 
@@ -21,10 +20,10 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/products" component={ProductList} />
         <Route path="/details" component={Details} />
-        <Route path="/cart" component={Cart} />
+        <Route path="/truckload" component={Cart} />
         <Route component={Default} />
-
       </Switch>
+      <Modal/>
     </React.Fragment>
   );
 }

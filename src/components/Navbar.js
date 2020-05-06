@@ -38,13 +38,13 @@ Creative Commons (Attribution 3.0 Unported);
                             </Link>
                         </li>
                         <li className="nav-item ml-5">
-                            <Link to="/products" className="nav-link products">
-                                products
+                            <Link to="http://www.linkedin.com/in/garrettmcmillan" className="nav-link about">
+                                about
                             </Link>
                         </li>
                         <li className="nav-item ml-5">
-                            <Link to="/" className="nav-link about">
-                                about
+                            <Link to="/products" className="nav-link products">
+                                products
                             </Link>
                         </li>
                     </ul>
@@ -55,17 +55,17 @@ Creative Commons (Attribution 3.0 Unported);
                             <span>
                                 <img src={logo} className="mx-auto d-block" alt="store" />
                             </span>
-                            My Generic Aesthetic.
+                            Generic Aesthetic.
                         </span>
                     </Link>
                 </span>
                 <span className="button-container col-sm-4">
-                    <Link to="/cart" className="button-link" style={{textDecoration: 'none'}} >
+                    <Link to="/truckload" className="button-link" style={{textDecoration: 'none'}} >
                         <ButtonContainer className="cart-button mr-4" >
-                            <span className=" mr-2">
+                            my truckload
+                            <span className=" ml-2">
                                 <i className="fas fa-truck-monster" />
                             </span> 
-                            my truckload
                         </ButtonContainer>
                     </Link>
                 </span>

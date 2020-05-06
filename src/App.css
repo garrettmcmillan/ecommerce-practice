@@ -86,3 +86,19 @@ body {
 .text-bright {
   color: var(--paleGreen);
 }
+
+.btn-black {
+  font-weight: bold;
+  background: var(--paleGreen);
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainGreen);
+  border: none !important;
+  border-radius: 0.2rem !important;
+}
+
+.btn-black:hover {
+  border: 0.03rem solid var(--mainGreen) !important;
+  color: var(--mainGreen);
+  transform: none;
+}

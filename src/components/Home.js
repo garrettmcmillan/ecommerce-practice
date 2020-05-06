@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
 const HomePage = styled.div`
     background: var(--mainWhite) !important;
@@ -16,7 +14,7 @@ const HomePage = styled.div`
     }
     .home-info-two {
         padding: .5rem 0 .5rem 0;
-        font-size: 1rem !important;
+        font-size: 1.9rem !important;
     }
     .bottom-link {
         border: 1px solid red;
@@ -30,17 +28,13 @@ export default class Home extends Component {
         return (
         <HomePage >
             <div className="home-info text-center mx-auto d-block mt-5 ">
-                    <span className="text-title">My Generic Aesthetic.</span> is a collection of personal favorites and a reflection of my style
-                <div className="home-info-two">
-                    Never take yourself too serious while learning something new
+                <h2>
+                    <span className="text-title py-0">Generic Aesthetic.</span> is a reflection of personal style
+                </h2>
+                <hr />
+                <div className="home-info-two py-0">
+                    <h5>Never take yourself too seriously while learning something new</h5>
                 </div>
-                {/* <div className="home-link"> 
-                <Link to="/about" style={{textDecoration: 'none'}} >
-                            <div className="home-img">
-                                <img src={logo} className="mx-auto d-block" alt="store" />
-                            </div>
-                </Link>
-                </div>  */}
             </div>
             
         </HomePage>
