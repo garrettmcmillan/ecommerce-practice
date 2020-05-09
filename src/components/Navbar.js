@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
-import { isElement } from 'react-dom/test-utils';
 import styled from 'styled-components';
 import { ButtonContainer } from './Button';
 
@@ -20,6 +19,11 @@ const NavWrapper = styled.nav`
             &:focus{
                 outline: none;
             }
+        }
+        .external-link {
+            text-decoration: none !important;
+            color: inherit;
+        }
     }
 `
 export default class Navbar extends Component {
@@ -32,19 +36,19 @@ Creative Commons (Attribution 3.0 Unported);
                 https://www.iconfinder.com/Makoto_msk */}
                 <span className="link-container col-sm-4"> 
                     <ul className="navbar-nav">
-                        <li className="nav-item ml-4">
-                            <Link to="/" className="nav-link home">
+                        <li className="nav-item ml-5">
+                            <Link to="/" className="nav-link">
                                 home
                             </Link>
                         </li>
-                        <li className="nav-item ml-5">
-                            <Link to="http://www.linkedin.com/in/garrettmcmillan" className="nav-link about">
+                        <li className="nav-item nav-link ml-5">
+                            <a className="nav-item external-link" target="_blank" href="http://www.linkedin.com/in/garrettmcmillan" rel="noopener noreferrer">
                                 about
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav-item ml-5">
-                            <Link to="/products" className="nav-link products">
-                                products
+                            <Link to="/aesthetic" className="nav-link products">
+                                aesthetic
                             </Link>
                         </li>
                     </ul>
@@ -53,7 +57,7 @@ Creative Commons (Attribution 3.0 Unported);
                     <Link className="" to="/" style={{textDecoration: 'none'}} >
                         <span className="logo-title">
                             <span>
-                                <img src={logo} className="mx-auto d-block" alt="store" />
+                                <img src={logo} className="mx-auto d-block py-3" alt="store" />
                             </span>
                             Generic Aesthetic.
                         </span>
@@ -61,9 +65,9 @@ Creative Commons (Attribution 3.0 Unported);
                 </span>
                 <span className="button-container col-sm-4">
                     <Link to="/truckload" className="button-link" style={{textDecoration: 'none'}} >
-                        <ButtonContainer className="cart-button mr-4" >
-                            my truckload
-                            <span className=" ml-2">
+                        <ButtonContainer className="cart-button mr-5" >
+                            <span className="hide-it">my truckload</span>
+                            <span className="ml-2 sm-fix">
                                 <i className="fas fa-truck-monster" />
                             </span> 
                         </ButtonContainer>

@@ -48,7 +48,7 @@ export default class Details extends Component {
                                     </p>
                                     {/* buttons */}
                                     <div className="d-flex justify-content-center">
-                                        <Link to="/products">
+                                        <Link to="/aesthetic">
                                             <ButtonContainer btn >
                                                 back to aesthetic
                                             </ButtonContainer>

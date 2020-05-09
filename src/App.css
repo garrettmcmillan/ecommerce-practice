@@ -13,28 +13,33 @@ body {
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
-@media screen and (max-width: 850px) {
-  .nav-wrapper {
-  }
+@media screen and (max-width: 600px) {
   .logo-container {
     display: flex;
-    order: 0;
-    align-items: center;
+    order: 1;
   }
   .link-container {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
     order: 2;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
   }
 
   .nav-item {
-    margin: 0 !important;
+    flex-direction: row;
+    margin: 0 2rem !important;
   }
 
   .button-container {
-    display: flex;
-    justify-content: center !important;
-    order: 2;
+    position: absolute;
+    margin-top: 0.6rem;
+    right: 0;
+    top: 0;
   }
   .cart-button {
     display: flex;
@@ -42,7 +47,16 @@ body {
     justify-content: center;
     margin: 0 !important;
   }
+  .hide-it {
+    display: none !important;
+  }
+
+  .sm-fix {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
+
 .nav-wrapper {
   display: flex;
   position: relative;
@@ -67,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--mainGreen);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 .button-container {
@@ -87,18 +101,23 @@ body {
   color: var(--paleGreen);
 }
 
-.btn-black {
+.btn-cart {
   font-weight: bold;
   background: var(--paleGreen);
   text-transform: capitalize;
   font-size: 0.8rem !important;
   color: var(--mainGreen);
   border: none !important;
-  border-radius: 0.2rem !important;
+  border-radius: 0 !important;
 }
 
-.btn-black:hover {
-  border: 0.03rem solid var(--mainGreen) !important;
+.btn-cart:hover {
   color: var(--mainGreen);
   transform: none;
+  transform: scale(1.01);
+}
+.cart-icon {
+  cursor: pointer !important;
+  font-size: 1.2rem;
+  color: var(--mainGreen);
 }

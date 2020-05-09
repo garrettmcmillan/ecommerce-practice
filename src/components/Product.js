@@ -68,11 +68,9 @@ const ProductWrapper = styled.div`
     .card {
         border: transparent;
         transition: all 0.4s linear;
-        border-radius: 0.2rem;
 
     }
     .card-footer {
-        border-radius: 0.2rem;
         display: flex;
         align-items: center;
         background: transparent;
@@ -107,10 +105,8 @@ const ProductWrapper = styled.div`
         right: 0;
         padding: 0.2rem 0.4rem;
         background: var(--paleGreen);
-        border-top: .05rem solid transparent;
-        border-left: .05rem solid transparent;
+        border: .05rem solid var(--paleGreen);
         font-size: 1.4rem;
-        border-radius: .75rem 0 0 0;
         transform: translate(100%, 100%);
     }
     .img-container: hover .cart-btn {
@@ -120,9 +116,7 @@ const ProductWrapper = styled.div`
     .cart-btn:hover {
         background: var(--paleGreen);
         color: var(--mainGreen);
-        border-top: .05rem solid var(--mainGreen) !important;
-        border-left: .05rem solid var(--mainGreen) !important;
-        transform: scale(1.01);
+        transform: scale(1.01) !important;
         cursor: pointer;
     }
 `
