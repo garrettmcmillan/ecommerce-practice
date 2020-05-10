@@ -29,7 +29,7 @@ export default class Home extends Component {
         <HomePage >
             <div className="home-info text-center mx-auto d-block mt-5 ">
                 <h2>
-                    <span className="text-title py-0">Generic Aesthetic.</span> is a reflection of personal style
+                    A reflection of personal style
                 </h2>
                 <hr />
                 <div className="home-info-two py-0">
