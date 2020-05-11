@@ -5,8 +5,8 @@ export default function CartItem({ item, value }) {
     const {increment, decrement, removeItem} = value;
     return (
         <div className="row my-3 text-capitalize text-center">
-            <div className="col-10 mx-auto col-lg-2">
-                <img src={img} style={{width: '5rem', height: '5rem'}} className="img-fluid" alt="product" />
+            <div className="col-10 mx-auto col-lg-2 img-div">
+                <img src={img} className="img-fluid" alt="product" />
             </div>
             <div className="col-10 mx-auto col-lg-2 text-green">
                 {title}
