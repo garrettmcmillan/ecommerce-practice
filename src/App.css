@@ -98,7 +98,6 @@ button {
   }
   .img-div {
     max-width: 10rem !important;
-    height: auto !important;
   }
 }
 
@@ -182,7 +181,6 @@ button {
   }
   .img-div {
     max-width: 10rem !important;
-    height: auto !important;
   }
 }
 
@@ -266,7 +264,6 @@ button {
   }
   .img-div {
     max-width: 10rem !important;
-    height: auto !important;
   }
 }
 /* ipad pro */
@@ -485,6 +482,6 @@ button {
 
 .img-div {
   max-width: 20rem;
-  height: auto !important;
+  height: auto;
   overflow: hidden;
 }
