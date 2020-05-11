@@ -67,7 +67,7 @@ Creative Commons (Attribution 3.0 Unported);
                 </span>
                 <span className="button-container col-sm-4">
                     <Link to="/truckload" className="button-link" style={{textDecoration: 'none'}} >
-                        <ButtonContainer className="cart-button mr-5" >
+                        <ButtonContainer className="cart-button mr-3" >
                             <span className="hide-it">my truckload</span>
                             <span className="ml-2 sm-fix">
                                 <i className="fas fa-truck-monster" />

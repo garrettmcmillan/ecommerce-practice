@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const ButtonContainer = styled.button`
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: .01rem;
     background: ${props => props.btn ? "var(--mainGreen)" : "var(--paleGreen)"};
     border: ${props => props.btn ? ".05rem solid var(--mainGreen)" : ".05rem solid var(--paleGreen)"};
