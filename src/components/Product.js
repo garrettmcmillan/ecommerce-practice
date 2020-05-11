@@ -106,7 +106,7 @@ const ProductWrapper = styled.div`
         padding: 0.2rem 0.4rem;
         background: var(--paleGreen);
         border: .05rem solid var(--paleGreen);
-        font-size: 1.4rem;
+        font-size: 1rem;
         transform: translate(100%, 100%);
     }
     .img-container: hover .cart-btn {

@@ -9,7 +9,7 @@ const NavWrapper = styled.nav`
     background: var(--mainBlue) !important;
         .nav-link {
         color: var(--mainGreen) !important;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: .01rem;
         text-transform: capitalize;
         padding-bottom: 0.2rem;
