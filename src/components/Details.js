@@ -43,7 +43,7 @@ export default class Details extends Component {
                                     </h4>
                                 </div>
                                 <hr />
-                                    <p className="lead text-green">
+                                    <p className="text-center text-green">
                                         {info}
                                     </p>
                                     {/* buttons */}

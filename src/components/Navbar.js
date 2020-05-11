@@ -29,7 +29,7 @@ const NavWrapper = styled.nav`
 export default class Navbar extends Component {
     render() {
         return (
-            <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-3 nav-wrapper">
+            <NavWrapper className="navbar navbar-expand-md navbar-dark nav-wrapper">
                 {/* 
 https://www.iconfinder.com/icons/1046674/arabica_barista_coffea_coffea_arabica_coffee_coffee_plant_plant_icon
 Creative Commons (Attribution 3.0 Unported);
@@ -42,7 +42,7 @@ Creative Commons (Attribution 3.0 Unported);
                             </Link>
                         </li>
                         <li className="nav-item nav-link ml-5">
-                            <a className="nav-item external-link" target="_blank" href="http://www.linkedin.com/in/garrettmcmillan" rel="noopener noreferrer">
+                            <a className="external-link" target="_blank" href="http://www.linkedin.com/in/garrettmcmillan" rel="noopener noreferrer">
                                 about
                             </a>
                         </li>
@@ -59,7 +59,9 @@ Creative Commons (Attribution 3.0 Unported);
                             <span>
                                 <img src={logo} className="mx-auto d-block py-3" alt="store" />
                             </span>
+                            <div className="logo-text">
                             Generic Aesthetic.
+                            </div>
                         </span>
                     </Link>
                 </span>
@@ -67,7 +69,7 @@ Creative Commons (Attribution 3.0 Unported);
                     <Link to="/truckload" className="button-link" style={{textDecoration: 'none'}} >
                         <ButtonContainer className="cart-button mr-5" >
                             <span className="hide-it">my truckload</span>
-                            <span className="ml-2 sm-fix">
+                            <span className="ml-2 md-fix">
                                 <i className="fas fa-truck-monster" />
                             </span> 
                         </ButtonContainer>
