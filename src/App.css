@@ -464,7 +464,9 @@ body {
   font-size: 1.2rem;
   color: var(--mainGreen);
 }
-.details-img {
-  max-width: 100% !important;
-  height: auto !important;
+
+.img-div {
+  max-width: 20rem;
+  height: auto;
+  overflow: hidden;
 }
