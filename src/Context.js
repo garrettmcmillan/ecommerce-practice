@@ -154,7 +154,7 @@ class ProductProvider extends Component {
     }
     addTotals = () => {
         let subTotal = 0;
-        this.state.cart.map(item => {subTotal += item.total});
+        this.state.cart.forEach(item => {subTotal += item.total});
         const tempTax = subTotal * 0.07;
         const tax = parseFloat(tempTax.toFixed(2));
         const total = subTotal + tax;

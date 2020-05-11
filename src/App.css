@@ -14,6 +14,10 @@ body {
   color: var(--mainDark) !important;
   width: auto;
 }
+
+button {
+  font-family: 'Oswald', sans-serif !important;
+}
 /* iphone 6, 6s, 7, 8 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
   .logo-container {
@@ -384,7 +388,7 @@ body {
     text-align: right;
   }
   .hide-it {
-    display: none;
+    display: none !important;
   }
   .sm-fix {
     margin: 0 !important;
@@ -438,6 +442,9 @@ body {
   display: flex;
   justify-content: flex-end !important;
   order: 3;
+}
+.cart-button {
+  flex-basis: content !important;
 }
 .hide-it {
   display: ;
