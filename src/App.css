@@ -98,6 +98,7 @@ button {
   }
   .img-div {
     max-width: 10rem !important;
+    height: auto !important;
   }
 }
 
@@ -181,6 +182,7 @@ button {
   }
   .img-div {
     max-width: 10rem !important;
+    height: auto !important;
   }
 }
 
@@ -264,6 +266,7 @@ button {
   }
   .img-div {
     max-width: 10rem !important;
+    height: auto !important;
   }
 }
 /* ipad pro */
@@ -446,9 +449,6 @@ button {
 .cart-button {
   flex-basis: content !important;
 }
-.hide-it {
-  display: ;
-}
 
 .text-title {
   font-family: 'Calistoga', cursive;
@@ -485,6 +485,6 @@ button {
 
 .img-div {
   max-width: 20rem;
-  height: auto;
+  height: auto !important;
   overflow: hidden;
 }
