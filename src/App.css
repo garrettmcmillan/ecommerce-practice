@@ -12,6 +12,7 @@ body {
   font-family: 'Oswald', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
+  width: auto;
 }
 /* iphone 6, 6s, 7, 8 */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
@@ -90,6 +91,9 @@ body {
     justify-content: center;
     align-items: flex-end;
     text-align: right;
+  }
+  .img-div {
+    max-width: 10rem !important;
   }
 }
 
@@ -171,6 +175,9 @@ body {
     align-items: flex-end;
     text-align: right;
   }
+  .img-div {
+    max-width: 10rem !important;
+  }
 }
 
 /* iphone X , XS, 11 Pro */
@@ -250,6 +257,9 @@ body {
     justify-content: center;
     align-items: flex-end;
     text-align: right;
+  }
+  .img-div {
+    max-width: 10rem !important;
   }
 }
 /* ipad pro */
@@ -383,6 +393,7 @@ body {
 }
 
 /* FULL SCREEN */
+
 .nav-wrapper {
   display: flex;
   flex-direction: row;
