@@ -69,7 +69,7 @@ Creative Commons (Attribution 3.0 Unported);
                     <Link to="/truckload" className="button-link" style={{textDecoration: 'none'}} >
                         <ButtonContainer className="cart-button mr-5" >
                             <span className="hide-it">my truckload</span>
-                            <span className="ml-2 md-fix">
+                            <span className="ml-2 sm-fix">
                                 <i className="fas fa-truck-monster" />
                             </span> 
                         </ButtonContainer>
